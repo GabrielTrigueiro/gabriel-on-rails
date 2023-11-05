@@ -1,9 +1,11 @@
 <h1>Article</h1>
-<%# para cada article na tabela de articles faça %>
+
 <ul>
   <% @articles.each do |article| %>
     <li>
-      <%= article.title %>
+      <a href="/articles/<%= article.id %>">
+        <%= article.title %>
+      </a>
     </li>
     <% end %>
 </ul>
