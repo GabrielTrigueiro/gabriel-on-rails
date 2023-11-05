@@ -2,5 +2,6 @@
 # MVC (Model View Controller) - Design Pattern que divide a responsa da aplicação para ficar mais fácil de entender
 class ArticlesController < ApplicationController
   def index
+    @articles = Article.all # fetch all articles
   end
 end
