@@ -7,4 +7,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  # ruby bin\rails generate controller Articles index --skip-routes
+  get "/articles", to: "articles#index"
 end
